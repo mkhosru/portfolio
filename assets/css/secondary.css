@@ -142,6 +142,17 @@
 }
 
 /* Position the Download Resume Button */
+/* Keyframes for Spin Animation */
+@keyframes spin-once {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+/* Updated Button Styling */
 .download-resume {
   position: absolute;
   top: 20px;
@@ -154,30 +165,15 @@
   font-size: 1rem;
   color: #fff;
   background-color: #007BFF;
+  text-align: center; /* Center the text */
   text-decoration: none;
   border-radius: 5px;
   transition: background 0.3s ease;
+  position: relative; /* Ensures centering works */
+  animation: spin-once 1s ease-out 1; /* Spins once on load */
 }
 
 .download-resume a:hover {
   background-color: #0056b3;
-}
-
-@keyframes slow-spin {
-  0% {
-      transform: rotate(0deg);
-  }
-  100% {
-      transform: rotate(360deg);
-  }
-}
-
-.download-resume a {
-  animation: slow-spin 3s linear infinite;
-}
-
-.download-resume a:hover {
-  background-color: #0056b3;
-  animation: none; /* Stops spinning on hover */
 }
 
