@@ -152,7 +152,7 @@
   }
 }
 
-/* Updated Button Styling */
+/* Button Styling */
 .download-resume {
   position: absolute;
   top: 20px;
@@ -165,12 +165,14 @@
   font-size: 1rem;
   color: #fff;
   background-color: #007BFF;
-  text-align: center; /* Center the text */
+  text-align: center; /* Ensures text is centered */
   text-decoration: none;
   border-radius: 5px;
   transition: background 0.3s ease;
-  position: relative; /* Ensures centering works */
-  animation: spin-once 1s ease-out 1; /* Spins once on load */
+
+  /* Spin Once Animation */
+  animation: spin-once 1.5s ease-out; /* Spins once for 1.5 seconds */
+  animation-fill-mode: forwards; /* Keeps the final state after spinning */
 }
 
 .download-resume a:hover {
