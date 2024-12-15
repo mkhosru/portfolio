@@ -142,7 +142,7 @@
 }
 
 /* Position the Download Resume Button */
-/* Keyframes for Spin Animation */
+/* Keyframes for Slow Spin Animation */
 @keyframes spin-once {
   0% {
       transform: rotate(0deg);
@@ -152,30 +152,33 @@
   }
 }
 
-/* Button Styling */
+/* Button Container */
 .download-resume {
   position: absolute;
   top: 20px;
   right: 30px;
 }
 
+/* Button Styling */
 .download-resume a {
-  display: inline-block;
+  display: inline-flex; /* Flex for text centering */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
   padding: 10px 20px;
   font-size: 1rem;
-  color: #fff;
-  background-color: #007BFF;
-  text-align: center; /* Ensures text is centered */
+  color: #000; /* Button text color */
+  background-color: #fff; /* White background for button */
   text-decoration: none;
   border-radius: 5px;
+  font-weight: bold; /* Makes text bold */
   transition: background 0.3s ease;
 
-  /* Spin Once Animation */
-  animation: spin-once 1.5s ease-out; /* Spins once for 1.5 seconds */
+  /* Slow Spin Animation */
+  animation: spin-once 2.5s ease-out; /* Slower spin duration */
   animation-fill-mode: forwards; /* Keeps the final state after spinning */
 }
 
 .download-resume a:hover {
-  background-color: #0056b3;
+  background-color: #f0f0f0; /* Light gray on hover */
 }
 
