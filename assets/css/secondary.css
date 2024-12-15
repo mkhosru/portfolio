@@ -162,3 +162,22 @@
 .download-resume a:hover {
   background-color: #0056b3;
 }
+
+@keyframes slow-spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.download-resume a {
+  animation: slow-spin 3s linear infinite;
+}
+
+.download-resume a:hover {
+  background-color: #0056b3;
+  animation: none; /* Stops spinning on hover */
+}
+
