@@ -1,7 +1,7 @@
 # Main Portfolio
   My main portfolio website that I will be updating often to include most recent projects, up-to-date resume information, and sending to potential employers.
   <br>
-  https://github.com/mkhosru/portfolio
+  https://mkhosru.github.io/portfolio/
 
   ## Table of Contents
   * [Demo](#demo)
